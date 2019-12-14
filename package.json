@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "surreal-adventures",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Generate surreal adventures with friends.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Benjamin Tang <benjamin.tang.hz@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.11",
     "gatsby-image": "^2.2.34",

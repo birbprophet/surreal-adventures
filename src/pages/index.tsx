@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import PageWrapper from "../components/core/PageWrapper"
+import Image from "../components/images/AstronautImage"
+import SEO from "../components/core/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
+  <PageWrapper>
+    <SEO title="C" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
@@ -15,7 +15,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  </PageWrapper>
 )
 
 export default IndexPage
