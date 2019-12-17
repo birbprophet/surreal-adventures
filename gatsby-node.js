@@ -30,5 +30,8 @@ exports.onCreatePage = ({ page, actions }) => {
   if (page.path.match(/app/)) {
     page.context.layout = "app"
     createPage(page)
+  } else if (page.path.match(/login/)) {
+    page.context.layout = "login"
+    createPage(page)
   }
 }
