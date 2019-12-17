@@ -1,12 +1,10 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
     title: `Surreal Adventures`,
-    description: `Generate surreal adventures with friends.`,
-    author: `Benjamin Tang`,
+    description: `Create surreal adventures with friends.`,
+    author: `Benjamin Tang <benjamin.tang.hz@gmail.com>`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -38,6 +36,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/app/*`] },
+    },
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: process.env.DATO_API_TOKEN,
+      },
     },
   ],
 }

@@ -1,15 +1,28 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import PageWrapper from "../components/core/PageWrapper"
 import Image from "../components/images/AstronautImage"
 import SEO from "../components/core/seo"
 
-const IndexPage = () => (
+export interface IProps {
+  data: IData
+}
+
+export interface IData {
+  datoCmsHomePage: IDatoCmsHomePage
+}
+
+export interface IDatoCmsHomePage {
+  description: string
+  title: string
+}
+
+const HomePage: React.FC<IProps> = ({ data }) => (
   <PageWrapper>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <h1>{data.datoCmsHomePage.title}</h1>
+    <p>{data.datoCmsHomePage.description}</p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
@@ -18,4 +31,13 @@ const IndexPage = () => (
   </PageWrapper>
 )
 
-export default IndexPage
+export default HomePage
+
+export const query = graphql`
+  query HomePageQuery {
+    datoCmsHomePage {
+      description
+      title
+    }
+  }
+`
