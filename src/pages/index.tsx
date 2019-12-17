@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import PageWrapper from "../components/core/PageWrapper"
+import StyleWrapper from "../components/core/StyleWrapper"
 import AstronautImage from "../components/images/AstronautImage"
-import SEO from "../components/core/seo"
+import SEO from "../components/core/SEOElement"
 import { useFirebase } from "gatsby-plugin-firebase"
 
 const HomePage: React.FC<IProps> = ({ data }) => {
@@ -11,7 +11,7 @@ const HomePage: React.FC<IProps> = ({ data }) => {
     firebase.analytics().logEvent("visited_home_page")
   }, [])
   return (
-    <PageWrapper>
+    <StyleWrapper>
       <SEO title="Home" />
       <h1>{data.datoCmsHomePage.title}</h1>
       <p>{data.datoCmsHomePage.description}</p>
@@ -20,7 +20,7 @@ const HomePage: React.FC<IProps> = ({ data }) => {
         <AstronautImage />
       </div>
       <Link to="/page-2/">Go to page 2</Link>
-    </PageWrapper>
+    </StyleWrapper>
   )
 }
 export default HomePage

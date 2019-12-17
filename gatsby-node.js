@@ -23,3 +23,12 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
     })
   }
 }
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+
+  if (page.path.match(/app/)) {
+    page.context.layout = "app"
+    createPage(page)
+  }
+}

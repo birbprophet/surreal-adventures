@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import "../../css/index.css"
+import "../../css/tailwind.css"
 
 const Component: React.FC = ({ children }) => {
   return (

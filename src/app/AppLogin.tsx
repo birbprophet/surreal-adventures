@@ -1,8 +1,12 @@
 import React from "react"
 import { useAuthState } from "react-firebase-hooks/auth"
-import { auth, googleProvider } from "../../services/firebase"
+import { auth, googleProvider } from "../services/firebase"
 
-const CurrentUser = () => {
+interface IProps {
+  path?: any
+}
+
+const CurrentUser: React.FC<IProps> = () => {
   const [user, initialising, error] = useAuthState(auth)
   const login = () => {
     auth.signInWithRedirect(googleProvider)
