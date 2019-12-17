@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Benjamin Tang <benjamin.tang.hz@gmail.com>",
   "dependencies": {
+    "firebase": "^7.6.0",
     "gatsby": "^2.18.11",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-create-client-paths": "^2.1.20",
@@ -26,6 +27,7 @@
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "@types/react-helmet": "^5.0.14",
+    "cypress": "^3.8.0",
     "firebase-tools": "^7.10.0",
     "prettier": "^1.19.1",
     "tailwindcss": "^1.1.4"
