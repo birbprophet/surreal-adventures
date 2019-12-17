@@ -6,6 +6,14 @@
 
 // You can delete this file if you're not using it
 exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+  const config = getConfig()
+  if (stage.startsWith("develop") && config.resolve) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "react-dom": "@hot-loader/react-dom",
+    }
+  }
+
   if (stage === "build-html") {
     actions.setWebpackConfig({
       externals: getConfig().externals.concat(function(
