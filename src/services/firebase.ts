@@ -2,15 +2,15 @@ import firebase from "firebase/app"
 import "firebase/auth"
 import "firebase/analytics"
 
-require("dotenv").config()
-
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.FIREBASE_DATABASE_URL,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  apiKey: "AIzaSyAnDq91hzKvQR5mzOVKX4W2_JgWwVvIHCI",
+  authDomain: "surreal-adventures.firebaseapp.com",
+  databaseURL: "https://surreal-adventures.firebaseio.com",
+  projectId: "surreal-adventures",
+  storageBucket: "surreal-adventures.appspot.com",
+  messagingSenderId: "833716284248",
+  appId: "1:833716284248:web:0566c1ced8d4bd1596932d",
+  measurementId: "G-SCYL8X7063",
 }
 
 firebase.initializeApp(firebaseConfig)
