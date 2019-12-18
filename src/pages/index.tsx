@@ -1,14 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { useFirebase } from "gatsby-plugin-firebase"
 
 import SEO from "../components/core/SEOElement"
 
 const ReactComponent: React.FC<IProps> = ({ data }) => {
-  useFirebase((firebase: any) => {
-    firebase.analytics().logEvent("visited_home_page")
-  }, [])
-
   return (
     <>
       <SEO title="Home" lang="en" meta={[]} />

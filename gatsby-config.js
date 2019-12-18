@@ -43,31 +43,6 @@ module.exports = {
         apiToken: process.env.DATO_API_TOKEN,
       },
     },
-    /*{
-      resolve: "gatsby-plugin-firebase",
-      options: {
-        features: {
-          auth: false,
-          database: false,
-          firestore: false,
-          storage: false,
-          messaging: false,
-          functions: false,
-          performance: false,
-          analytics: true,
-        },
-        credentials: {
-          apiKey: "AIzaSyAnDq91hzKvQR5mzOVKX4W2_JgWwVvIHCI",
-          authDomain: "surreal-adventures.firebaseapp.com",
-          databaseURL: "https://surreal-adventures.firebaseio.com",
-          projectId: "surreal-adventures",
-          storageBucket: "surreal-adventures.appspot.com",
-          messagingSenderId: "833716284248",
-          appId: "1:833716284248:web:0566c1ced8d4bd1596932d",
-          measurementId: "G-SCYL8X7063",
-        },
-      },
-    },*/
     `gatsby-plugin-postcss`,
     `gatsby-plugin-layout`,
     {
