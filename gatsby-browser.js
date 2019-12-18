@@ -5,4 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+import LogRocket from "logrocket"
 export { wrapRootElement } from "./src/apollo/wrapRootElement"
+
+LogRocket.init("hjzdrl/surreal-adventures")
