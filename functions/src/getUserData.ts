@@ -3,7 +3,7 @@ const admin = require("firebase-admin")
 admin.initializeApp(functions.config().firebase)
 
 // On sign up.
-exports.processSignUp = functions.auth.user().onCreate((user: any) => {
+export const processSignUp = functions.auth.user().onCreate((user: any) => {
   const customClaims = {
     "https://hasura.io/jwt/claims": {
       "x-hasura-default-role": "user",
