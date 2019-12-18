@@ -43,7 +43,7 @@ module.exports = {
         apiToken: process.env.DATO_API_TOKEN,
       },
     },
-    {
+    /*{
       resolve: "gatsby-plugin-firebase",
       options: {
         features: {
@@ -67,7 +67,7 @@ module.exports = {
           measurementId: "G-SCYL8X7063",
         },
       },
-    },
+    },*/
     `gatsby-plugin-postcss`,
     `gatsby-plugin-layout`,
     {
@@ -76,7 +76,7 @@ module.exports = {
         printRejected: true, // Print removed selectors and processed file names
         // develop: true, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
-        // whitelist: ['whitelist'], // Don't remove this selector
+        whitelist: ["Typist", "Cursor--blinking", "Cursor"], // Don't remove this selector
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },

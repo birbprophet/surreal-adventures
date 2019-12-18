@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
 import SiteHeader from "../components/layouts/SiteHeader"
+import { firebaseapp } from "../services/firebase"
 
 import "typeface-roboto"
 import "typeface-asap"
@@ -13,26 +14,30 @@ interface IProps {
 }
 
 const ReactComponent: React.FC<IProps> = ({ children, pageContext }) => {
+  useEffect(() => {
+    firebaseapp.analytics()
+  }, [])
+
   if (pageContext.layout === "login") {
     return (
-      <div>
+      <>
         <h1>login layout</h1>
         {children}
-      </div>
+      </>
     )
   } else if (pageContext.layout === "app") {
     return (
-      <div>
+      <>
         <h1>app layout</h1>
         {children}
-      </div>
+      </>
     )
   }
   return (
-    <div>
+    <>
       <SiteHeader />
       {children}
-    </div>
+    </>
   )
 }
 

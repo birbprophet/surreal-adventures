@@ -20,7 +20,7 @@ const ReactComponent: React.FC = () => {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex pt-2">
         <div className="py-2 px-4 flex-1">
           <h3 className="font-rounded font-semibold text-gray-900 text-2xl">
             <Typist
