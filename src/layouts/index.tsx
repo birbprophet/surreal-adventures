@@ -1,5 +1,9 @@
 import React from "react"
 
+import "typeface-roboto"
+import "../css/fonts.css"
+import "../css/tailwind.css"
+
 interface IProps {
   children?: any
   pageContext?: any

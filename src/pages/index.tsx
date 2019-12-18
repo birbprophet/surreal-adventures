@@ -1,26 +1,23 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import StyleWrapper from "../components/core/StyleWrapper"
-import AstronautImage from "../components/images/AstronautImage"
-import SEO from "../components/core/SEOElement"
 import { useFirebase } from "gatsby-plugin-firebase"
 
+import SEO from "../components/core/SEOElement"
+
 const HomePage: React.FC<IProps> = ({ data }) => {
-  useFirebase(firebase => {
+  useFirebase((firebase: any) => {
     firebase.analytics().logEvent("visited_home_page")
   }, [])
+
   return (
-    <StyleWrapper>
+    <>
       <SEO title="Home" />
       <h1>{data.datoCmsHomePage.title}</h1>
       <p>{data.datoCmsHomePage.description}</p>
       <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <AstronautImage />
-      </div>
+
       <Link to="/page-2/">Go to page 2</Link>
-    </StyleWrapper>
+    </>
   )
 }
 export default HomePage
