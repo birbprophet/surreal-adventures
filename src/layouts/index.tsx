@@ -1,15 +1,18 @@
 import React from "react"
+import SiteHeader from "../components/layouts/SiteHeader"
 
 import "typeface-roboto"
+import "typeface-asap"
 import "../css/fonts.css"
 import "../css/tailwind.css"
+import "../css/typist.css"
 
 interface IProps {
   children?: any
   pageContext?: any
 }
 
-const Component: React.FC<IProps> = ({ children, pageContext }) => {
+const ReactComponent: React.FC<IProps> = ({ children, pageContext }) => {
   if (pageContext.layout === "login") {
     return (
       <div>
@@ -27,10 +30,10 @@ const Component: React.FC<IProps> = ({ children, pageContext }) => {
   }
   return (
     <div>
-      <h1>other layout</h1>
+      <SiteHeader />
       {children}
     </div>
   )
 }
 
-export default Component
+export default ReactComponent

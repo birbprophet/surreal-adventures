@@ -27,6 +27,7 @@
     "react-firebase-hooks": "^2.1.1",
     "react-helmet": "^5.2.1",
     "react-typist": "^2.0.5",
+    "typeface-asap": "0.0.69",
     "typeface-roboto": "0.0.75"
   },
   "devDependencies": {
@@ -35,6 +36,7 @@
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "@types/react-helmet": "^5.0.14",
+    "@types/react-typist": "^2.0.1",
     "cypress": "^3.8.0",
     "firebase-tools": "^7.10.0",
     "prettier": "^1.19.1",

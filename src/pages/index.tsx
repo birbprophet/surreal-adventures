@@ -4,14 +4,14 @@ import { useFirebase } from "gatsby-plugin-firebase"
 
 import SEO from "../components/core/SEOElement"
 
-const HomePage: React.FC<IProps> = ({ data }) => {
+const ReactComponent: React.FC<IProps> = ({ data }) => {
   useFirebase((firebase: any) => {
     firebase.analytics().logEvent("visited_home_page")
   }, [])
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Home" lang="en" meta={[]} />
       <h1>{data.datoCmsHomePage.title}</h1>
       <p>{data.datoCmsHomePage.description}</p>
       <p>Now go build something great.</p>
@@ -20,7 +20,7 @@ const HomePage: React.FC<IProps> = ({ data }) => {
     </>
   )
 }
-export default HomePage
+export default ReactComponent
 
 export const query = graphql`
   query HomePageQuery {
