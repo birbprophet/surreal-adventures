@@ -46,10 +46,12 @@ const ReactComponent: React.FC<IProps> = ({ children, pageContext }) => {
   }
   return (
     <SiteState.Provider>
-      <SiteOverflowWrapper>
-        <SiteHeader />
-        <div>{children}</div>
-      </SiteOverflowWrapper>
+      <div className="overflow-x-hidden overflow-y-auto scrolling-touch">
+        <SiteOverflowWrapper>
+          <SiteHeader />
+          <div>{children}</div>
+        </SiteOverflowWrapper>
+      </div>
     </SiteState.Provider>
   )
 }
