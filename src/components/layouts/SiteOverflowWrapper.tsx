@@ -9,7 +9,7 @@ const ReactComponent: React.FC<IProps> = ({ children }) => {
   const { menuOpen } = siteState
 
   return (
-    <div className={"overflow-x-hidden" + menuOpen ? "overflow-y-hidden" : ""}>
+    <div className={"overflow-x-hidden " + menuOpen ? "overflow-y-hidden" : ""}>
       {children}
     </div>
   )

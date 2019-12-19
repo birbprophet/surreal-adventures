@@ -599,6 +599,13 @@ video {
   height: auto;
 }
 
+html,
+body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  background-color: #1a202c;
+}
+
 .container {
   width: 100%;
 }

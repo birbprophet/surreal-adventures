@@ -5,9 +5,8 @@ import LogRocket from "logrocket"
 import "typeface-roboto"
 import "typeface-asap"
 import "../css/styles.css"
-import "../css/normalize.css"
-import "../css/fonts.css"
 import "../css/index.css"
+import "../css/fonts.css"
 import "../css/typist.css"
 
 import SiteHeader from "../components/layouts/SiteHeader"
@@ -46,12 +45,10 @@ const ReactComponent: React.FC<IProps> = ({ children, pageContext }) => {
   }
   return (
     <SiteState.Provider>
-      <div className="overflow-x-hidden overflow-y-auto scrolling-touch">
-        <SiteOverflowWrapper>
-          <SiteHeader />
-          <div>{children}</div>
-        </SiteOverflowWrapper>
-      </div>
+      <SiteOverflowWrapper>
+        <SiteHeader />
+        <div>{children}</div>
+      </SiteOverflowWrapper>
     </SiteState.Provider>
   )
 }
