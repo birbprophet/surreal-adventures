@@ -37,7 +37,7 @@ const ReactComponent: React.FC = () => {
           <div
             className={
               "text-xl text-gray-200 flex rounded-lg pl-4 pr-2 py-2 " +
-              (resourcesOpen ? "bg-gray-700" : "")
+              (resourcesOpen ? "bg-gray-700 font-semibold" : "")
             }
             onClick={handleResourcesOnClick}
           >
@@ -73,7 +73,7 @@ const ReactComponent: React.FC = () => {
           <div
             className={
               "text-xl text-gray-200 flex rounded-lg pl-4 pr-2 py-2 " +
-              (aboutOpen ? "bg-gray-700" : "")
+              (aboutOpen ? "bg-gray-700 font-semibold" : "")
             }
             onClick={handleAboutOnClick}
           >
