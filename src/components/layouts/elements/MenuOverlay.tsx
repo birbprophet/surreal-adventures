@@ -9,7 +9,7 @@ interface IProps {
 const ReactComponent: React.FC<IProps> = ({ menuOpen }) => {
   return (
     <nav
-      className="flex flex-col justify-center bg-gray-800 h-screen w-screen absolute top-0 left-0"
+      className="flex flex-col justify-center bg-gray-800 h-full w-screen absolute top-0 left-0"
       style={
         menuOpen
           ? {
