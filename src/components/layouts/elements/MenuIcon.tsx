@@ -18,15 +18,15 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen, toggleMenuOpen }) => {
         style={
           menuOpen
             ? {
-                WebkitTransition: "all 0.3s linear",
-                transition: "all 0.3s linear",
+                WebkitTransition: "all 0.5s linear",
+                transition: "all 0.5s linear",
                 WebkitTransform: "rotate(45deg)",
                 transform: "rotate(45deg)",
                 transformOrigin: "1px",
               }
             : {
-                WebkitTransition: "all 0.3s linear",
-                transition: "all 0.3s linear",
+                WebkitTransition: "all 0.5s linear",
+                transition: "all 0.5s linear",
                 WebkitTransform: "rotate(0)",
                 transform: "rotate(0)",
                 transformOrigin: "1px",
@@ -39,16 +39,16 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen, toggleMenuOpen }) => {
           menuOpen
             ? {
                 opacity: 0,
-                WebkitTransition: "all 0.3s linear",
-                transition: "all 0.3s linear",
+                WebkitTransition: "all 0.5s linear",
+                transition: "all 0.5s linear",
                 WebkitTransform: "translateX(60px)",
                 transform: "translateX(60px)",
                 transformOrigin: "1px",
               }
             : {
                 opacity: 1,
-                WebkitTransition: "all 0.3s linear",
-                transition: "all 0.3s linear",
+                WebkitTransition: "all 0.5s linear",
+                transition: "all 0.5s linear",
                 WebkitTransform: "translateX(0)",
                 transform: "translateX(0)",
                 transformOrigin: "1px",
@@ -60,15 +60,15 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen, toggleMenuOpen }) => {
         style={
           menuOpen
             ? {
-                WebkitTransition: "all 0.3s linear",
-                transition: "all 0.3s linear",
+                WebkitTransition: "all 0.5s linear",
+                transition: "all 0.5s linear",
                 WebkitTransform: "rotate(-45deg)",
                 transform: "rotate(-45deg)",
                 transformOrigin: "1px",
               }
             : {
-                WebkitTransition: "all 0.3s linear",
-                transition: "all 0.3s linear",
+                WebkitTransition: "all 0.5s linear",
+                transition: "all 0.5s linear",
                 WebkitTransform: "rotate(0)",
                 transform: "rotate(0)",
                 transformOrigin: "1px",

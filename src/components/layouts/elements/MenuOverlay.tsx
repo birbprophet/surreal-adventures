@@ -15,14 +15,14 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen }) => {
       style={
         menuOpen
           ? {
-              WebkitTransition: "transform 0.3s ease-in-out",
-              transition: "transform 0.3s ease-in-out",
+              WebkitTransition: "transform 0.5s ease-in-out",
+              transition: "transform 0.5s ease-in-out",
               WebkitTransform: "translateX(0)",
               transform: "translateX(0)",
             }
           : {
-              WebkitTransition: "transform 0.3s ease-in-out",
-              transition: "transform 0.3s ease-in-out",
+              WebkitTransition: "transform 0.5s ease-in-out",
+              transition: "transform 0.5s ease-in-out",
               WebkitTransform: "translateX(100%)",
               transform: "translateX(100%)",
             }
