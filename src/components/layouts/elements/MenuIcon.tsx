@@ -20,11 +20,13 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen, toggleMenuOpen }) => {
             ? {
                 transition: "all 0.3s linear",
                 transform: "rotate(45deg)",
+                WebkitTransform: "rotate(45deg)",
                 transformOrigin: "1px",
               }
             : {
                 transition: "all 0.3s linear",
                 transform: "rotate(0)",
+                WebkitTransform: "rotate(0)",
                 transformOrigin: "1px",
               }
         }
@@ -37,12 +39,14 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen, toggleMenuOpen }) => {
                 opacity: 0,
                 transition: "all 0.3s linear",
                 transform: "translateX(60px)",
+                WebkitTransform: "translateX(60px)",
                 transformOrigin: "1px",
               }
             : {
                 opacity: 1,
                 transition: "all 0.3s linear",
                 transform: "translateX(0)",
+                WebkitTransform: "translateX(0)",
                 transformOrigin: "1px",
               }
         }
@@ -54,11 +58,13 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen, toggleMenuOpen }) => {
             ? {
                 transition: "all 0.3s linear",
                 transform: "rotate(-45deg)",
+                WebkitTransform: "rotate(-45deg)",
                 transformOrigin: "1px",
               }
             : {
                 transition: "all 0.3s linear",
                 transform: "rotate(0)",
+                WebkitTransform: "rotate(0)",
                 transformOrigin: "1px",
               }
         }

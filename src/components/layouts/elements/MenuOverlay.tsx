@@ -15,10 +15,12 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen }) => {
           ? {
               transition: "transform 0.3s ease-in-out",
               transform: "translateX(0)",
+              WebkitTransform: "translateX(0)",
             }
           : {
               transition: "transform 0.3s ease-in-out",
               transform: "translateX(100%)",
+              WebkitTransform: "translateX(100%)",
             }
       }
     >
