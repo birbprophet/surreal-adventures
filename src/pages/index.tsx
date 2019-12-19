@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import { Lottie, ReactLottieConfig } from "@crello/react-lottie"
 import SurrealUndrawDreamer from "../assets/animations/SurrealUndrawDreamer"
 
 import SEO from "../components/core/SEOElement"
@@ -12,9 +11,9 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
       <SEO title="Home" lang="en" meta={[]} />
       <h1>{data.datoCmsHomePage.title}</h1>
       <p>{data.datoCmsHomePage.description}</p>
-
-      <SurrealUndrawDreamer />
-
+      <div className="z-0">
+        <SurrealUndrawDreamer />
+      </div>
       <Link to="/page-2/">Go to page 2</Link>
     </>
   )

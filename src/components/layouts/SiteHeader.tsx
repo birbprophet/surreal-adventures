@@ -38,7 +38,7 @@ const ReactComponent: React.FC = () => {
             </Typist>
           </Link>
         </div>
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden z-10">
           <MenuOverlay menuOpen={menuOpen} />
           <MenuIcon menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen} />
         </div>
