@@ -10,6 +10,102 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
       <h1>{data.datoCmsHomePage.title}</h1>
       <p>{data.datoCmsHomePage.description}</p>
       <p>Now go build something great.</p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
+      <p>
+        Now go build something great.
+        <br />
+      </p>
 
       <Link to="/page-2/">Go to page 2</Link>
     </>

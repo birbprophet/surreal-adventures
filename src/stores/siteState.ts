@@ -6,7 +6,7 @@ interface IInitialState {
 }
 
 const defaultState: IInitialState = {
-  menuOpen: true,
+  menuOpen: false,
 }
 
 const useSiteState = (initialState = defaultState) => {
