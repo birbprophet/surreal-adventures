@@ -4,6 +4,7 @@ import LogRocket from "logrocket"
 
 import "typeface-roboto"
 import "typeface-asap"
+import "../css/styles.css"
 import "../css/fonts.css"
 import "../css/tailwind.css"
 import "../css/typist.css"
@@ -14,13 +15,6 @@ import { SiteState } from "../stores/siteState"
 interface IProps {
   children?: any
   pageContext?: any
-}
-
-const SiteComponent: React.FC<IProps> = ({ children }) => {
-  let { siteState } = SiteState.useContainer()
-  const { menuOpen } = siteState
-
-  return <div className={menuOpen ? "hidden" : ""}>{children}</div>
 }
 
 const ReactComponent: React.FC<IProps> = ({ children, pageContext }) => {
@@ -51,7 +45,7 @@ const ReactComponent: React.FC<IProps> = ({ children, pageContext }) => {
   return (
     <SiteState.Provider>
       <SiteHeader />
-      <SiteComponent children={children} />
+      <div>{children}</div>
     </SiteState.Provider>
   )
 }
