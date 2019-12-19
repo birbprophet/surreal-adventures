@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react"
+import { Link } from "gatsby"
 
 import Typist from "react-typist"
 
@@ -17,8 +18,11 @@ const ReactComponent: React.FC = () => {
   return (
     <>
       <div className="flex pt-2">
-        <div className="py-2 px-4 flex-1 z-20">
-          <h3 className="font-rounded font-semibold text-gray-100 text-2xl">
+        <div className="my-2 mx-6 flex-1 z-20 cursor-pointer">
+          <Link
+            to="/"
+            className="font-rounded font-semibold text-gray-100 text-2xl"
+          >
             <Typist
               avgTypingDelay={100}
               startDelay={1000}
@@ -32,11 +36,11 @@ const ReactComponent: React.FC = () => {
               Surreal <Typist.Delay ms={500} />
               Adventures
             </Typist>
-          </h3>
+          </Link>
         </div>
         <div>
-        <MenuOverlay menuOpen={menuOpen}/>
-        <MenuIcon menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen} />
+          <MenuOverlay menuOpen={menuOpen} />
+          <MenuIcon menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen} />
         </div>
       </div>
     </>
