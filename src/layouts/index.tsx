@@ -7,7 +7,7 @@ import "typeface-asap"
 import "../css/styles.css"
 import "../css/normalize.css"
 import "../css/fonts.css"
-import "../css/tailwind.css"
+import "../css/index.css"
 import "../css/typist.css"
 
 import SiteHeader from "../components/layouts/SiteHeader"
