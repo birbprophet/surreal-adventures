@@ -5,6 +5,7 @@ import Typist from "react-typist"
 import { SiteState } from "../../stores/siteState"
 
 import MenuIcon from "./elements/MenuIcon"
+import MenuOverlay from "./elements/MenuOverlay"
 
 const ReactComponent: React.FC = () => {
   let { siteState, setSiteState } = SiteState.useContainer()
@@ -34,7 +35,8 @@ const ReactComponent: React.FC = () => {
           </h3>
         </div>
         <div>
-          <MenuIcon menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen} />
+        <MenuOverlay menuOpen={menuOpen}/>
+        <MenuIcon menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen} />
         </div>
       </div>
     </>
