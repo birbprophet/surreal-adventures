@@ -12,11 +12,11 @@ const ReactComponent: React.FC = () => {
   }
   return (
     <>
-      <div className="absolute top-0 left-0 mt-20 mx-6 w-9/12 flex flex-col">
+      <div className="absolute top-0 inset-x-0 mt-20 ml-6 mr-20 flex flex-col">
         <Link to="/">
           <div className="pb-2 border-b-2 border-gray-600">
-            <div className="text-xl text-gray-200 pl-4 pr-2 py-2">
-              How It Works
+            <div className="text-xl text-gray-200 pl-4 pr-2 py-2 flex flex-row items-center">
+              <div>How It Works</div>
             </div>
           </div>
         </Link>
@@ -62,8 +62,10 @@ const ReactComponent: React.FC = () => {
           </div>
         </Link>
       </div>
-      <div className="absolute bottom-0 left-0 bg-gray-100 m-6">
-        Bottom Section
+      <div className="absolute bottom-0 inset-x-0 ml-6 mr-20 mb-8">
+        <button className="bg-gray-200 rounded-lg border border-gray-200 px-4 py-4 w-full text-gray-900 text-xl font-rounded font-medium">
+          Create Stories Now
+        </button>
       </div>
     </>
   )

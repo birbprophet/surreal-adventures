@@ -10,6 +10,7 @@ import "../css/tailwind.css"
 import "../css/typist.css"
 
 import SiteHeader from "../components/layouts/SiteHeader"
+import SiteOverflowWrapper from "../components/layouts/SiteOverflowWrapper"
 import { SiteState } from "../stores/siteState"
 
 interface IProps {
@@ -44,8 +45,10 @@ const ReactComponent: React.FC<IProps> = ({ children, pageContext }) => {
   }
   return (
     <SiteState.Provider>
-      <SiteHeader />
-      <div>{children}</div>
+      <SiteOverflowWrapper>
+        <SiteHeader />
+        <div>{children}</div>
+      </SiteOverflowWrapper>
     </SiteState.Provider>
   )
 }
