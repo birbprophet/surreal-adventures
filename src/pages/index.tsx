@@ -67,7 +67,7 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
           your adventure" style prompts.
         </div>
 
-        <div className="flex-1 flex flex-col justify-end mb-24 mx-6">
+        <div className="flex-1 flex flex-col justify-end mb-24 pb-6 mx-6">
           <div className="text-gray-400 flex justify-center text-lg">
             <ChevronDownSvg className="stroke-current fill-current text-gray-400 h-6 mx-2" />
             <div>Start your own adventure</div>

@@ -16,9 +16,9 @@ const ReactComponent: React.FC = () => {
     setSiteState({ ...siteState, ...{ menuOpen: !menuOpen } })
 
   return (
-    <div className="fixed top-0 bg-gray-900 border-gray-900 border z-30 flex w-full">
-      <div className="left-0 flex pt-2 overflow-x-hidden flex-1 z-30 bg-gray-900 border-gray-900 border">
-        <div className="my-2 mx-6 z-20 cursor-pointer relative ">
+    <div className="fixed top-0 bg-gray-900 flex w-full z-30">
+      <div className="left-0 flex pt-2 overflow-x-hidden flex-1 z-30">
+        <div className="my-2 mx-6 cursor-pointer relative ">
           <Link
             to="/"
             className="font-rounded font-semibold text-gray-100 text-2xl"
@@ -39,7 +39,7 @@ const ReactComponent: React.FC = () => {
           </Link>
         </div>
       </div>
-      <div className="p-2 bg-gray-900 border-gray-900 border">
+      <div className="p-2 bg-gray-900">
         <MenuOverlay menuOpen={menuOpen} />
         <MenuIcon menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen} />
       </div>
