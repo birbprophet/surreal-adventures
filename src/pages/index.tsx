@@ -5,7 +5,7 @@ import Typist from "react-typist"
 import TypistLoop from "react-typist-loop"
 
 import SvgLines from "react-mt-svg-lines"
-import Svg from "../assets/images/surreal_undraw_dreamer_trace.svg"
+import SurrealUndrawDreamerSvg from "../assets/images/surreal_undraw_dreamer_trace.svg"
 
 import SurrealUndrawDreamer from "../assets/animations/SurrealUndrawDreamer"
 import FloatingIconsSection from "../components/elements/FloatingIconSection"
@@ -30,10 +30,10 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
         meta={[]}
       />
 
-      <FloatingIconsSection />
-      <div className="scrolling-auto">
-        <div className="flex flex-col">
-          <div className="mt-12 ml-6 font-rounded font-bold text-gray-200 text-4xl text-left tracking-normal leading-tight">
+      <div className="">
+        <FloatingIconsSection />
+        <div className="flex flex-col h-screen fixed top-0">
+          <div className="mt-24 ml-6 font-rounded font-bold text-gray-200 text-4xl text-left tracking-normal leading-tight">
             <div className="flex">
               <div className="mr-2">Create </div>
               <div>
@@ -73,9 +73,9 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
           </button>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 hidden">
           <SvgLines animate={true} duration={2000}>
-            <Svg className="animated-svg h-48 w-full stroke-current text-gray-700" />
+            <SurrealUndrawDreamerSvg className="animated-svg h-48 w-full stroke-current text-gray-700" />
           </SvgLines>
         </div>
       </div>
