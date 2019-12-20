@@ -16,7 +16,7 @@ const ReactComponent: React.FC = () => {
     setSiteState({ ...siteState, ...{ menuOpen: !menuOpen } })
 
   return (
-    <div className="fixed top-0 bg-gray-900 z-50 flex w-full">
+    <div className="fixed top-0 bg-gray-900 z-30 flex w-full">
       <div className="left-0 flex pt-2 overflow-x-hidden flex-1">
         <div className="my-2 mx-6 z-20 cursor-pointer relative z-30">
           <Link
