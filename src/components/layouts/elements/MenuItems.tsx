@@ -1,12 +1,21 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
-import ChevronUpSvg from "../../../assets/svgs/cheveron-up.svg"
+import { useSpring, animated } from "react-spring"
+
 import ChevronDownSvg from "../../../assets/svgs/cheveron-down.svg"
 
 const ReactComponent: React.FC = () => {
   const [resourcesOpen, setResourcesOpen] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
+
+  const resourcesOpenProps = useSpring({
+    transform: resourcesOpen ? "rotate(0deg)" : "rotate(-90deg)",
+  })
+
+  const aboutOpenProps = useSpring({
+    transform: aboutOpen ? "rotate(0deg)" : "rotate(-90deg)",
+  })
 
   const handleResourcesOnClick = () => {
     if (aboutOpen && !resourcesOpen) {
@@ -43,11 +52,9 @@ const ReactComponent: React.FC = () => {
           >
             <div className="flex-1">Resources</div>
             <div>
-              {resourcesOpen ? (
-                <ChevronUpSvg className="fill-current w-8 h-8" />
-              ) : (
+              <animated.div style={resourcesOpenProps}>
                 <ChevronDownSvg className="fill-current w-8 h-8" />
-              )}
+              </animated.div>
             </div>
           </div>
           <div className={"ml-6 my-2 " + (resourcesOpen ? "" : "hidden")}>
@@ -79,11 +86,9 @@ const ReactComponent: React.FC = () => {
           >
             <div className="flex-1">About</div>
             <div>
-              {aboutOpen ? (
-                <ChevronUpSvg className="fill-current w-8 h-8" />
-              ) : (
+              <animated.div style={aboutOpenProps}>
                 <ChevronDownSvg className="fill-current w-8 h-8" />
-              )}
+              </animated.div>
             </div>
           </div>
           <div className={"ml-6 my-2 " + (aboutOpen ? "" : "hidden")}>
