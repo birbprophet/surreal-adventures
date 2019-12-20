@@ -33,7 +33,7 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
       />
 
       <FloatingIconsSection />
-      <div className="relative top-0 inset-x-0 flex flex-col h-screen bg-grey-900">
+      <div className="relative top-0 inset-x-0 flex flex-col h-screen bg-grey-900 pt-12">
         <div className="mt-16 ml-6 font-rounded font-bold text-gray-200 text-4xl text-left tracking-normal leading-tight">
           <div className="flex">
             <div className="mr-2">Create </div>
@@ -67,7 +67,7 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
           your adventure" style prompts.
         </div>
 
-        <div className="flex-1 flex flex-col justify-end pb-24 mx-6">
+        <div className="flex-1 flex flex-col justify-end pb-10 mx-6">
           <div className="text-gray-400 flex justify-center text-lg">
             <ChevronDownSvg className="stroke-current fill-current text-gray-400 h-6 mx-2" />
             <div>Start your own adventure</div>
