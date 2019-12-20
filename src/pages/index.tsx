@@ -5,9 +5,9 @@ import Typist from "react-typist"
 import TypistLoop from "react-typist-loop"
 
 import SvgLines from "react-mt-svg-lines"
-import SurrealUndrawDreamerSvg from "../assets/images/surreal_undraw_dreamer_trace.svg"
+import HeroAnimationCompositionSvg from "../assets/images/hero_animation/hero_animation_composition_trace.svg"
 
-import SurrealUndrawDreamer from "../assets/animations/SurrealUndrawDreamer"
+import ChooseYourAdventureAnimation from "../assets/animations/ChooseYourAdventureAnimation"
 import FloatingIconsSection from "../components/elements/FloatingIconSection"
 
 import SEO from "../components/core/SEOElement"
@@ -61,25 +61,22 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
             <div>you never knew</div>
             <div>you wanted</div>
           </div>
-          <div className="text-gray-400 mt-6 ml-6 mr-10 text-lg">
+          <div className="text-gray-400 mt-4 ml-6 mr-10 text-lg text-left flex-1">
             Generate your own unique stories by interacting with an AI via
             "choose your adventure" style prompts.
           </div>
 
-          <button className="mx-6 mt-16">
-            <button className="bg-gray-200 rounded-lg border border-gray-200 px-4 py-4 w-full text-gray-900 text-xl font-rounded font-medium">
+          <div className="relative bottom-0 mx-6 mb-12">
+            <button className="bg-gray-200 rounded-lg border border-gray-200 px-4 py-4 w-full text-gray-900 text-2xl font-rounded font-semibold">
               Create Stories Now
             </button>
-          </button>
-        </div>
-
-        <div className="mt-12 hidden">
-          <SvgLines animate={true} duration={2000}>
-            <SurrealUndrawDreamerSvg className="animated-svg h-48 w-full stroke-current text-gray-700" />
-          </SvgLines>
+            <div className="text-gray-400 flex justify-center mt-6 text-lg">
+              <div>Find out how it works</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="fixed w-full pl-24 pr-8 mt-8 z-0 hidden"></div>
+      <div className="fixed w-full pl-24 pr-8 mt-8 z-0"></div>
     </>
   )
 }

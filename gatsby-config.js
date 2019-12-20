@@ -7,6 +7,16 @@ module.exports = {
     author: `Benjamin Tang <benjamin.tang.hz@gmail.com>`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-force-file-loader`,
+      options: {
+        rules: [
+          "fonts" /* Matches Gatsby default rules for fonts */,
+          "images" /* Matches Gatsby default rules for images */,
+          "media" /* Matches Gatsby default rules for media (video/audio) */,
+        ],
+      },
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {

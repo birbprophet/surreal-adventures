@@ -1,0 +1,6 @@
+  20/12/2019 7:16:03 PM: Finished composition “tempConverterComp”.
+
+
+  Total Time Elapsed: 0 Seconds
+Log closed on 20/12/2019 at 7:16:03 PM
+
