@@ -18,7 +18,7 @@ const ReactComponent: React.FC = () => {
   return (
     <>
       <div className="flex pt-2 overflow-x-hidden">
-        <div className="my-2 mx-6 flex-1 z-20 cursor-pointer">
+        <div className="my-2 mx-6 flex-1 z-20 cursor-pointer relative z-30">
           <Link
             to="/"
             className="font-rounded font-semibold text-gray-100 text-2xl"
@@ -38,7 +38,7 @@ const ReactComponent: React.FC = () => {
             </Typist>
           </Link>
         </div>
-        <div className="overflow-x-hidden z-10">
+        <div className="overflow-x-hidden">
           <MenuOverlay menuOpen={menuOpen} />
           <MenuIcon menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen} />
         </div>

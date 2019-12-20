@@ -11,7 +11,7 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen, toggleMenuOpen }) => {
   return (
     <button
       onClick={() => toggleMenuOpen()}
-      className="mt-2 mr-4 flex flex-col justify-around w-8 h-8 bg-transparent border-none cursor-pointer p-0 z-30 focus:outline-none"
+      className="relative mt-2 mr-4 flex flex-col justify-around w-8 h-8 bg-transparent border-none cursor-pointer p-0 z-30 focus:outline-none"
     >
       <div
         className={subDivClass}
