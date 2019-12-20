@@ -4,12 +4,23 @@ import { graphql } from "gatsby"
 import Typist from "react-typist"
 import TypistLoop from "react-typist-loop"
 
+import SvgLines from "react-mt-svg-lines"
+import Svg from "../assets/images/surreal_undraw_dreamer_trace.svg"
+
 import SurrealUndrawDreamer from "../assets/animations/SurrealUndrawDreamer"
 import FloatingIconsSection from "../components/elements/FloatingIconSection"
 
 import SEO from "../components/core/SEOElement"
 
 const ReactComponent: React.FC<IProps> = ({ data }) => {
+  const typistLoopTextList: string[] = [
+    "Stories",
+    "Crossovers",
+    "Adventures",
+    "Fanfics",
+    "Memes",
+  ]
+
   return (
     <>
       <SEO
@@ -25,36 +36,40 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
           <div className="mr-2">Create </div>
           <div>
             <TypistLoop interval={3000}>
-              {["Stories", "Crossovers", "Adventures", "Fanfics", "Memes"].map(
-                text => (
-                  <Typist
-                    key={text}
-                    startDelay={500}
-                    cursor={{
-                      show: true,
-                      blink: true,
-                      element: "_",
-                    }}
-                  >
-                    {text}
-                    <Typist.Delay ms={4000} />
-                    {Array.prototype.map.call(text, _ => (
-                      <Typist.Backspace count={1} delay={50} />
-                    ))}
-                  </Typist>
-                )
-              )}
+              {typistLoopTextList.map(text => (
+                <Typist
+                  key={text}
+                  startDelay={500}
+                  cursor={{
+                    show: true,
+                    blink: true,
+                    element: "_",
+                  }}
+                >
+                  {text}
+                  <Typist.Delay ms={4000} />
+                  {Array.prototype.map.call(text, _ => (
+                    <Typist.Backspace count={1} delay={50} />
+                  ))}
+                </Typist>
+              ))}
             </TypistLoop>
           </div>
         </div>
-
         <div>you never knew</div>
         <div>you wanted</div>
       </div>
-
-      <div className="fixed w-full pl-24 pr-8 mt-8 z-0 hidden">
-        <SurrealUndrawDreamer />
+      <div className="text-gray-400 mt-6 ml-6 mr-10 text-lg">
+        Generate your own unique stories by interacting with an AI via "choose
+        your adventure" style prompts.
       </div>
+      <div className="mt-12">
+        <SvgLines animate={true} duration={2000} delay={1000}>
+          <Svg className="animated-svg h-48 w-full stroke-current text-gray-700" />
+        </SvgLines>
+      </div>
+
+      <div className="fixed w-full pl-24 pr-8 mt-8 z-0 hidden"></div>
     </>
   )
 }

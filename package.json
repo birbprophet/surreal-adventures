@@ -33,6 +33,7 @@
     "react-dom": "^16.12.0",
     "react-firebase-hooks": "^2.1.1",
     "react-helmet": "^5.2.1",
+    "react-mt-svg-lines": "^0.9.1",
     "react-spring": "^8.0.27",
     "react-typist": "^2.0.5",
     "react-typist-loop": "0.0.5",

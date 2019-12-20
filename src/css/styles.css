@@ -5,3 +5,9 @@ body {
   height: 100%;
   background-color: #1a202c;
 }
+
+.animated-svg {
+  stroke: "blue" !important;
+  stroke-width: "5" !important;
+  fill: "none" !important;
+}
