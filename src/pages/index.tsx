@@ -41,7 +41,7 @@ const ReactComponent: React.FC<IProps> = ({ data }) => {
                   key={text}
                   startDelay={500}
                   cursor={{
-                    show: true,
+                    show: false,
                     blink: true,
                     element: "_",
                   }}
