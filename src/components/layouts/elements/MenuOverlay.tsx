@@ -10,7 +10,7 @@ const ReactComponent: React.FC<IProps> = ({ menuOpen }) => {
   return (
     <nav
       className={
-        "flex flex-col justify-center bg-gray-700 h-screen w-screen absolute top-0 left-0"
+        "flex flex-col justify-center bg-gray-700 h-screen w-screen absolute top-0 left-0 z-30"
       }
       style={
         menuOpen
