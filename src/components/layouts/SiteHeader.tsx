@@ -40,7 +40,7 @@ const ReactComponent: React.FC = () => {
         </div>
         <MenuOverlay menuOpen={menuOpen} />
       </div>
-      <div className="fixed top-0 z-20 left-0 flex pt-2 bg-gray-900">
+      <div className="fixed top-0 z-30 left-0 flex pt-2 bg-gray-900">
         <MenuIcon menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen} />
       </div>
     </>
