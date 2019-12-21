@@ -118,7 +118,7 @@ const ReactComponent: React.FC = () => {
         </Link>
       </div>
 
-      <div className="absolute bottom-0 inset-x-0 mx-6 mb-24 pb-6 pt-8 bg-gray-800 z-30">
+      <div className="absolute bottom-0 inset-x-0 mx-6 mb-24 pb-6 pt-8 bg-gray-700 z-30">
         <button className="bg-gray-200 rounded-lg border border-gray-200 px-4 py-4 w-full text-gray-900 text-2xl font-rounded font-semibold">
           Create Stories Now
         </button>

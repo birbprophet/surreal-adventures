@@ -8,6 +8,7 @@ import "../css/styles.css"
 import "../css/index.css"
 import "../css/fonts.css"
 import "../css/typist.css"
+import "../css/normalize.css"
 
 import SiteHeader from "../components/layouts/SiteHeader"
 import SiteOverflowWrapper from "../components/layouts/SiteOverflowWrapper"
