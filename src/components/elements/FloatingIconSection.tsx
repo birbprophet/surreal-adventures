@@ -13,7 +13,7 @@ import PepeSvg from "../../assets/images/floating_icons/pepe.svg"
 
 const ReactComponent: React.FC = () => {
   return (
-    <div className="absolute top-0 mt-24 w-full h-64 z-0">
+    <div className="absolute top-0 mt-24 w-full h-64">
       <animated.div style={generateFloatingIconProps()}>
         <ShrekSvg className="opacity-50 h-8" />
       </animated.div>

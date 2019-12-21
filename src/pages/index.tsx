@@ -1,10 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import SvgLines from "react-mt-svg-lines"
-import HeroAnimationCompositionSvg from "../assets/images/hero_animation/hero_animation_composition_trace.svg"
-
-import ChooseYourAdventureAnimation from "../assets/animations/ChooseYourAdventureAnimation"
 import IndexSectionOne from "../sections/IndexSectionOne"
 import IndexSectionTwo from "../sections/IndexSectionTwo"
 
