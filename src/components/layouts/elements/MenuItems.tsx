@@ -33,7 +33,7 @@ const ReactComponent: React.FC = () => {
 
   return (
     <>
-      <div className="absolute top-0 inset-x-0 mt-20 mx-6 flex flex-col h-full">
+      <div className="absolute top-0 inset-x-0 mt-24 mx-6 flex flex-col h-full">
         <Link to="/">
           <div className="pb-2 border-b-2 border-gray-600">
             <div className="text-xl text-gray-200 pl-4 pr-2 py-2 flex flex-row items-center">
