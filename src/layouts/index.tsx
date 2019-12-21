@@ -47,11 +47,8 @@ const ReactComponent: React.FC<IProps> = ({ children, pageContext }) => {
   return (
     <SiteState.Provider>
       <SiteOverflowWrapper>
-        <div className="fixed z-30">
-          <SiteHeader />
-        </div>
-
         <div>{children}</div>
+        <SiteHeader />
       </SiteOverflowWrapper>
     </SiteState.Provider>
   )
