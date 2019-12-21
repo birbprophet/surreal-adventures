@@ -17,7 +17,7 @@ const ReactComponent: React.FC = () => {
   return (
     <>
       <FloatingIconsSection />
-      <div className="relative top-0 inset-x-0 flex flex-col h-screen bg-grey-900 pt-12">
+      <div className="relative top-0 inset-x-0 flex flex-col h-screen mt-12">
         <div className="mt-16 ml-6 font-rounded font-bold text-gray-200 text-4xl text-left tracking-normal leading-tight">
           <div className="flex">
             <div className="mr-2">Create </div>
